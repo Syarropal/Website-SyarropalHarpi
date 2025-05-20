@@ -1,0 +1,176 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body & Layout */
+body {
+  background-color: #0e3d3c; /* warna dari gambar kedua */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+header {
+  width: 100%;
+  background-color: #0e3d3c;
+  color: white;
+  padding: 40px 0;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+nav {
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  padding: 16px 24px;
+  margin: 0 8px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #4CAF50;
+}
+
+/* Container Layout */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: #333;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  margin-top: 20px; /* 🆕 tambahkan ini untuk memberi jarak lebih */
+}
+
+/* Teks Kiri */
+.article {
+  flex: 1;
+}
+
+.article h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #0e3d3c;
+}
+
+.article p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.article p:first-of-type {
+  white-space: pre-line;
+}
+
+/* Pindahkan semua ini ke luar */
+.biodata {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.biodata li {
+  display: table;
+  table-layout: fixed;
+  margin-bottom: 8px;
+}
+
+.biodata .label,
+.biodata .colon,
+.biodata .value {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.biodata .label {
+  width: 130px;
+  font-weight: 600;
+  color: #0e3d3c;
+}
+
+.biodata .colon {
+  width: 10px;
+}
+
+.biodata .value {
+  padding-left: 5px;
+}
+
+/* Tombol */
+.button-group {
+  margin-top: 20px;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-group .hire {
+  background-color: black;
+  color: white;
+}
+
+.button-group .experience {
+  background-color: #f26522;
+  color: white;
+}
+
+/* Foto Profil Kanan */
+.profile-pic {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+
+.article img {
+  transition: transform 0.3s ease;
+}
+
+.article img:hover {
+  transform: scale(1.05);
+}
